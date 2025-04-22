@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .top-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .nav-btn,
+  .gear-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #b48eff;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .dog-img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+  }
+  
+  .dog-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 10px;
+    flex: 1;
+    text-align: left;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #a968e6;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .value {
+    font-size: 13px;
+    color: #000;
+  }
+  
+  .text-box {
+    background: #f1f1f1;
+    border-radius: 12px;
+    padding: 12px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #000;
+    margin-top: 5px;
+    line-height: 1.4;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .pill {
+    background-color: #00c2c2;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .long {
+    background-color: #29b6b6;
+  }
+  
+  .accept-btn {
+    background-color: #c593fc;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
