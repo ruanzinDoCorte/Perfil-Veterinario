@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="toggle-buttons">
+      <button id="btnUser" class="toggle active">Usuário</button>
+      <button id="btnVet" class="toggle">Veterinário</button>
+    </div>
+
+    <form id="formUser" class="form">
+      <div class="input-group">
+        <label>Nome</label>
+        <input type="text" placeholder="Please Enter Your Nome" />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Please Enter Your Password" />
+      </div>
+
+      <div class="options">
+        <label><input type="checkbox" /> Remember Me</label>
+        <a href="#">Esqueci a Senha</a>
+      </div>
+
+      <button type="submit" class="login-btn">Log In</button>
+
+      <div class="footer">
+        <a href="#">Voltar</a>
+        <a href="#">Cadastrar-se</a>
+      </div>
+    </form>
+
+  <form id="formUser" class="form">
+  <div class="input-group">
+    <label>Nome</label>
+    <input type="text" placeholder="Please Enter Your Nome" />
+  </div>
+
+  <div class="input-group">
+    <label>Password</label>
+    <input type="password" placeholder="Senha" />
+  </div>
+
+  <div class="input-group">
+    <label>Password</label>
+    <input type="password" placeholder="Confirmar Senha" />
+  </div>
+
+  <div class="input-group">
+    <label>Email</label>
+    <input type="email" placeholder="Confirmar Senha" />
+  </div>
+
+  <button type="submit" class="login-btn">Log In</button>
+
+  <div class="footer">
+    <a href="#">Voltar</a>
+  </div>
+</form>
+
+  </div>
+
+  <script>
+    const btnUser = document.getElementById('btnUser');
+    const btnVet = document.getElementById('btnVet');
+    const formUser = document.getElementById('formUser');
+    const formVet = document.getElementById('formVet');
+
+    btnUser.addEventListener('click', () => {
+      btnUser.classList.add('active');
+      btnVet.classList.remove('active');
+      formUser.classList.remove('hidden');
+      formVet.classList.add('hidden');
+    });
+
+    btnVet.addEventListener('click', () => {
+      btnVet.classList.add('active');
+      btnUser.classList.remove('active');
+      formVet.classList.remove('hidden');
+      formUser.classList.add('hidden');
+    });
+  </script>
+</body>
+</html>

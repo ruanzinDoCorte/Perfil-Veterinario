@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1e5f8;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 4px;
+}
+
+.card.selected {
+  border: 2px solid #73b7ff;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #000;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/847/847969.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.content {
+  flex: 1;
+}
+
+.content strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
