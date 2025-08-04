@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chat</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat Veterinário</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="chat-container">
-    <div id="chat" class="chat-box"></div>
+    <div class="message user">
+      <div class="bubble user-bubble">
+        <p><strong>Oi, doutor Felipe!</strong> O Rex está com coceira atrás da orelha desde ontem.<br>Isso pode ser algo grave?</p>
+      </div>
+      <img class="avatar" src="img/image 55.png" alt="Paciente">
+    </div>
 
-    <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Digite sua mensagem..." autocomplete="off" required />
-      <button type="submit">Enviar</button>
-    </form>
+    <div class="message doctor">
+      <div class="bubble doctor-bubble">
+        <p>Olá! Pode ser apenas uma irritação ou reação alérgica.<br>
+        Ele teve contato com algo novo, tipo produto de limpeza ou ração?</p>
+      </div>
+      <img class="avatar" src="img/image.png" alt="Doutor">
+    </div>
+
+    <div class="message user">
+      <div class="icon"></div>
+      <div class="bubble user-bubble">
+        <p>Comecei a dar uma ração nova essa semana. Será que é isso?</p>
+      </div>
+    </div>
+
+    <div class="message doctor">
+      <div class="bubble doctor-bubble">
+        <p>É bem possível. Suspenda a nova ração por dois dias e observa.<br>
+        Se ele continuar coçando, me chama aqui que marcamos uma consulta, combinado?</p>
+      </div>
+      <img class="avatar" src="img/image.png" alt="Doutor">
+    </div>
+
+    <div class="message user">
+      <div class="icon"></div>
+      <div class="bubble user-bubble">
+        <p>Combinado sim! Muito obrigado, doutor</p>
+      </div>
+    </div>
+
+    <div class="message doctor">
+      <div class="bubble doctor-bubble">
+        <p>Por nada! Qualquer coisa estou por aqui!</p>
+      </div>
+      <img class="avatar" src="img/image.png" alt="Doutor">
+    </div>
+    <form class="input-area">
+  <input type="text" placeholder="Digite sua mensagem..." required />
+  <button type="submit">Enviar</button>
+</form>
+
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
