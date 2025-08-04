@@ -1,76 +1,111 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f3ecf9;
+  background: #f0eef5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.chat-container {
-  width: 100%;
-  max-width: 600px;
+.login-container {
+  background: white;
+  width: 350px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.toggle {
+  width: 48%;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  background: #eee;
+  color: #333;
+  transition: 0.3s;
+}
+
+.toggle.active {
+  background: #6c00ff;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 20px;
 }
 
-.chat-box {
-  flex: 1;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  overflow-y: auto;
-  height: 400px;
+.input-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 15px;
 }
 
-.message {
-  display: flex;
-  align-items: flex-end;
-}
-
-.user .bubble {
-  background-color: #fff;
-  border: 2px solid #73b7ff;
-  align-self: flex-start;
-}
-
-.bubble {
-  padding: 12px 16px;
-  border-radius: 15px;
-  max-width: 75%;
+.input-group label {
   font-size: 14px;
-  line-height: 1.4;
+  margin-bottom: 4px;
 }
 
-form {
-  display: flex;
-  gap: 10px;
-}
-
-input[type="text"] {
-  flex: 1;
-  padding: 10px 14px;
-  border-radius: 10px;
+.input-group input {
+  padding: 10px;
   border: 1px solid #ccc;
+  border-radius: 8px;
   font-size: 14px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #7d3fc0;
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: red;
+  text-decoration: none;
+}
+
+.login-btn {
+  background: #6c00ff;
   color: white;
   border: none;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #6b2ead;
+.login-btn:hover {
+  background: #5700cc;
+}
+
+.footer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hidden {
+  display: none;
 }
